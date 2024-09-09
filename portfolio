@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f7;
+            text-align: center;
+            padding: 20px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .header {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .link-button {
+            width: 300px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .link-button:hover {
+            background-color: #e9ecef;
+        }
+
+        .link-button:active {
+          background-color: #ffff99;
+          box-shadow: 0 5px #666;
+          transform: translateY(4px);
+        }
+
+        .link-button {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+
+        .icons {
+            margin-top: 20px;
+        }
+        .icons img {
+            width: 40px;
+            margin: 0 10px;
+        }
+        .hidden-link {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="growplantbot.jpg" alt="Profile Image" class="profile-img">
+    <div class="header">@earnwithrashid</div>
+    <p>If Links Can't Open (Click ... 3 Dots) of Upper Right Corner & Open in Browser</p>
+
+    <div class="links">
+        <div class="link-button" onclick="openHiddenLink('youtube-link')">How To Join Free VIP Group & Start Trading</div>
+        <div class="link-button" onclick="openHiddenLink('telegram-link')">Telegram Channel (@EarnwithRashidChannel)</div>
+        <div class="link-button" onclick="openHiddenLink('whatsapp-link')">What's App Channel</div>
+        <div class="link-button" onclick="openHiddenLink('quotex-link')">Quotex Registration Link</div>
+        <div class="link-button" onclick="openHiddenLink('quotex-course-link')">Quotex Free Course</div>
+        <div class="link-button" onclick="openHiddenLink('bingx-link')">BingX Registration Link</div>
+        <div class="link-button" onclick="openHiddenLink('binance-link')">Binance Registration Link</div>
+        <div class="link-button" onclick="openHiddenLink('crypto-course-link')">Free Crypto Course</div>
+        <div class="link-button" onclick="openHiddenLink('youtube-channel-link')">YouTube Channel (@earnwithrashid)</div>
+        <div class="link-button" onclick="openHiddenLink('instagram-link')">Instagram (@earnwithrashid)</div>
+        <div class="link-button" onclick="openHiddenLink('tiktok-link')">TikTok (@earnwithrashid)</div>
+        <div class="link-button" onclick="openHiddenLink('facebook-link')">Facebook Page (@earnwithrashidofficial)</div>
+    </div>
+
+    <div class="icons">
+        <img src="donate.jpg" alt="Icon">
+        <img src="donate.jpg" alt="Icon">
+        <img src="donate.jpg" alt="Icon">
+        <img src="donate.jpg" alt="Icon">
+    </div>
+
+    <!-- Hidden links -->
+    <a id="youtube-link" class="hidden-link" href="https://youtube.com/your-link" target="_blank"></a>
+
+    <a id="telegram-link" class="hidden-link" href="https://t.me/your-telegram-link" target="_blank"></a>
+
+    <a id="whatsapp-link" class="hidden-link" href="https://whatsapp.com/your-link" target="_blank"></a>
+
+    <a id="quotex-link" class="hidden-link" href="https://quotex.com/your-link" target="_blank"></a>
+
+    <a id="quotex-course-link" class="hidden-link" href="https://quotex.com/course-link" target="_blank"></a>
+
+    <a id="bingx-link" class="hidden-link" href="https://bingx.com/your-link" target="_blank"></a>
+
+    <a id="binance-link" class="hidden-link" href="https://binance.com/your-link" target="_blank"></a>
+
+    <a id="crypto-course-link" class="hidden-link" href="https://crypto.com/your-course-link" target="_blank"></a>
+
+    <a id="youtube-channel-link" class="hidden-link" href="https://youtube.com/your-channel" target="_blank"></a>
+
+    <a id="instagram-link" class="hidden-link" href="https://instagram.com/your-link" target="_blank"></a>
+
+    <a id="tiktok-link" class="hidden-link" href="https://tiktok.com/your-link" target="_blank"></a>
+
+    <a id="facebook-link" class="hidden-link" href="https://facebook.com/your-page-link" target="_blank"></a>
+
+    <script>
+        function openHiddenLink(id) {
+            document.getElementById(id).click();
+        }
+    </script>
+
+</body>
+</html>
